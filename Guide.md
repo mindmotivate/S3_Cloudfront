@@ -100,14 +100,6 @@ Cloudfront will make your files accessible WITHOUT making them public!
     - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/ebcd65dc-e7da-402b-ac7a-6b8ae0634a85)
     
 
-    
-    
-
-
-    
-
-
-
 
 ## Part 3: Add Custom Domain and SSL Certificate
 
