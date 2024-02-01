@@ -5,15 +5,33 @@
 1. **Create an S3 Bucket:**
    - Log in to the AWS Management Console.
    - Navigate to the S3 service.
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/7f57fb52-e8a3-4c21-a750-357d8d12d54c)
    - Click on "Create bucket" and follow the wizard to create a new bucket.
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/1ffae19d-8e11-4a3d-92bc-9467334b5d9a)
+   - Create a globally unique bucket name:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/df379199-799d-416a-8a85-f6d000727fcb)
+   - Leave all default settings as is and simply create the bucket
+
 
 2. **Configure the S3 Bucket for Static Website Hosting:**
    - Select your newly created bucket.
+   - - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/6fea72fc-718d-4513-9f97-f5d7a7dbc7b8)
    - Go to the "Properties" tab and choose "Static website hosting."
    - Enable static website hosting and specify the index document (e.g., `index.html`).
 
 3. **Upload Your Website Files:**
    - Upload your HTML, CSS, JavaScript, and other static files to the S3 bucket.
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/874d82f5-21f1-4d99-9de7-de718549392e)
+   - Example file set:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/73bdd4eb-7c2a-49a5-9eec-f61aa056ec25)
+   - Ensure that yor files are uploaded properly:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/0d666d57-4994-4d9f-866b-87c7b353f887)
+   - Click on an individual file to view details:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/d5f0fb5d-59e8-4fd0-a453-87f1e5dd80a8)
+
+
+
+
 
 ## Part 2: Set Up CloudFront Distribution
 
