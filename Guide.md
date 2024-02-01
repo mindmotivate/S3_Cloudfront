@@ -44,6 +44,8 @@ Cloudfront will make your files accessible WITHOUT making them public!
    - Go to the CloudFront service in the AWS Management Console.
    - Click on "Create Distribution" and choose the Web distribution type.
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/691c8588-19ad-4cf9-ba3f-d51639db8637)\\
+
+6. **Configure CloudFront Settings:**
    - Choose from a list of origin domains:
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/501060b1-8f18-4032-a23a-41de8a5a83e4)
    - We will select Origin Access Control:
@@ -56,19 +58,45 @@ Cloudfront will make your files accessible WITHOUT making them public!
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/cef7f4aa-1b2c-4f96-a3fd-d4e23f8e944c)
    - Set "Default Root Object" to your index.html file:
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/a1e43a86-5570-4695-a5ba-4401c31933d9)
+   - Click "Create Distribution"proceed:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/e2b6889f-c17d-4208-8196-5efcb54d6ebc)
+   - Select "Permissions" to access bucket policy details: 
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/e5129655-974d-4275-b265-930dcb25d61b)
+   - You may select the "Copy Policy" button in the upper right hand screen:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/f0d1e795-4ea1-432d-912d-6e1de2fd7a7f)
+   - Cick on the Edit button:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/9e8fbf37-bdfa-4363-b174-5c1319d40d9f)
+   - You will then be able to paste you policy in the policy field:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/f3acf23d-82b3-4035-9ba6-ffef2cdc449a)
+   - ## Note:
+   - If you ever loose your policy you can obtain it under the "Origin" tab and click on your distribution:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/c792624e-7228-4e5c-ae98-48a164b29571)
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/7660797e-40d4-45e5-8006-a435bd5b50f9)
+  
+   - ## Policy
+   - We "Allow" Cloudfront "Service" to "Get Any Object" in our S3 bucket in the distribution we are creating
    - 
-
-
-
-
-
 
 6. **Configure CloudFront Settings:**
    - In the distribution settings, set the "Origin Domain Name" to the S3 bucket endpoint.
    - Configure other settings such as caching behavior and distribution settings.
 
 7. **Deploy CloudFront Distribution:**
-   - Wait for the CloudFront distribution to deploy (this may take some time).
+   - Wait for the CloudFront distribution to deploy (this may take some time):
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/e92bfd33-aceb-4447-acdb-89343fb9f135)
+   - After a sucessful deployment you may copy the priovided url and paste it in your browser:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/454a573b-463f-42ae-87c8-b22643f31bb0)
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/285f8fc3-ce8c-4da8-8084-90ec64016fa7)
+   - Navigate to Origin Access:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/dd065338-6c94-4610-85b1-dcb03def8880)
+   - Notice how it is assigned to the distribution you just created!
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/d58339ea-6917-4b22-adfd-c1b04c9cedee)
+
+
+
+
+
+
 
 ## Part 3: Add Custom Domain and SSL Certificate
 
