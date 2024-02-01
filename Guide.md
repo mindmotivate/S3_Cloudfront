@@ -93,7 +93,18 @@ Cloudfront will make your files accessible WITHOUT making them public!
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/d58339ea-6917-4b22-adfd-c1b04c9cedee)
 
 
+8: **Georestrictions:**
+    - If you would like to access Georestriciton options navigate here:
+    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/1fc5ff98-3e61-42ac-a89a-d1616f56025f)
+    - This is where you'd set up your ALLOW & BLOCK lists:
+    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/ebcd65dc-e7da-402b-ac7a-6b8ae0634a85)
+    
 
+    
+    
+
+
+    
 
 
 
