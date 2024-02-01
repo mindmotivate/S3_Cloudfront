@@ -28,22 +28,46 @@
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/0d666d57-4994-4d9f-866b-87c7b353f887)
    - Click on an individual file to view details:
    - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/d5f0fb5d-59e8-4fd0-a453-87f1e5dd80a8)
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/a51b14a3-b65a-43b2-8769-035cb23cac3a)
 
 
-
+***If you attempt to select an object URL, you will recieve the following error message:***
+![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/83ffd5ea-8805-47a8-b1d9-251a39c0e3b7)
+***Addtionally, If you select "OPEN" you will access your object via pre signed url however, you wont see any images:***
+![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/fa4ab5d2-5938-4172-be9b-af1ee7915477)
 
 
 ## Part 2: Set Up CloudFront Distribution
+Cloudfront will make your files accessible WITHOUT making them public!
 
 4. **Create a CloudFront Distribution:**
    - Go to the CloudFront service in the AWS Management Console.
    - Click on "Create Distribution" and choose the Web distribution type.
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/691c8588-19ad-4cf9-ba3f-d51639db8637)\\
+   - Choose from a list of origin domains:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/501060b1-8f18-4032-a23a-41de8a5a83e4)
+   - We will select Origin Access Control:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/8695e8e3-64f9-4d6e-96db-a9837acb20de)
+   - Create "Control Setting":
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/58a4cd1c-7687-4622-831c-45b0dcbdb43a)
+   - You MUST update the bucket policy!
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/03e7d539-6a3a-47f0-acf8-8a76009210ba)
+   - Do NOT enable WAF:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/cef7f4aa-1b2c-4f96-a3fd-d4e23f8e944c)
+   - Set "Default Root Object" to your index.html file:
+   - ![image](https://github.com/mindmotivate/S3_Cloudfront/assets/130941970/a1e43a86-5570-4695-a5ba-4401c31933d9)
+   - 
 
-5. **Configure CloudFront Settings:**
+
+
+
+
+
+6. **Configure CloudFront Settings:**
    - In the distribution settings, set the "Origin Domain Name" to the S3 bucket endpoint.
    - Configure other settings such as caching behavior and distribution settings.
 
-6. **Deploy CloudFront Distribution:**
+7. **Deploy CloudFront Distribution:**
    - Wait for the CloudFront distribution to deploy (this may take some time).
 
 ## Part 3: Add Custom Domain and SSL Certificate
