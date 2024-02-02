@@ -118,7 +118,8 @@
   
   
   
-  
+  hcl
+  ```
   
   resource "aws_cloudfront_distribution" "site_access" {
     # Origin configuration for S3 bucket
@@ -174,3 +175,4 @@
     # Dependency on CloudFront Origin Access Identity (OAI)
     depends_on = [aws_cloudfront_origin_access_identity.OAI]
   }
+```
